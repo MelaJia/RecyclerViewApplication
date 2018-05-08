@@ -2,6 +2,7 @@ package cn.edu.gdmec.android.recyclerviewapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
         msgAdapter=new MsgAdapter(msgList);
         recyclerView.setAdapter(msgAdapter);
+     //   recyclerView.addItemDecoration(new Di);
+      //  recyclerView.setItemAnimator(new DefaultItemAnimator());
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
